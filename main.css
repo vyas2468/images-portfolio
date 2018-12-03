@@ -1,0 +1,45 @@
+/*
+flexbo properties. 
+We want to define that everything inside of the div is part of 
+flexbox. within container, display: flex; activates flexbox
+*/
+
+body {
+	background-color: #3594E1;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 3em;
+	/*margin: auto;*/
+	width: 400px;
+	border-bottom: 4px solid pink;
+	border-right: 4px solid pink;
+}
+
+h1:hover {
+	transform: scale(1.1);
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+img {
+	width: 450px;
+	height: 300px;
+	/*padding: 20px;*/
+	margin: 30px;
+	border-radius: 40px;
+	/*border: 2px solid pink;*/
+}
+
+img:hover {
+	transform: scale(1.2);
+
+}
+
