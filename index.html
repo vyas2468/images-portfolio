@@ -1,20 +1,230 @@
+<!-- UPDATE VERSION 2 -->
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Image Portfolio Site</title>
-	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	<title>Bootstrap Landing Page</title>
+    <!-- FONT AWESOME -->
+    
+    
+    <!-- BOOTSTRAP CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- STYLESHEETS -->
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-<!-- Displaying items in the location we want: 1 way to do so is flexbox. -->
-	<h1>Life in the wild</h1>
-	<div class="container">
-		<img src="https://static.pexels.com/photos/52500/horse-herd-fog-nature-52500.jpeg">
-		<img src="https://static.pexels.com/photos/66898/elephant-cub-tsavo-kenya-66898.jpeg">
-		<img src="https://static.pexels.com/photos/213399/pexels-photo-213399.jpeg">
-		<img src="https://static.pexels.com/photos/158471/ibis-bird-red-animals-158471.jpeg">
-		<img src="https://static.pexels.com/photos/133459/pexels-photo-133459.jpeg">
-		<img src="https://static.pexels.com/photos/50988/ape-berber-monkeys-mammal-affchen-50988.jpeg">
-	</div>
+    <!-- fixed-top and bg-transparent could be added -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="#">SVDeveloper</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#about">About</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#portfolio">Portfolio</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#hireme">Hire Me</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="special-context nav-link" href="#">Resume</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav> <!-- NAVIGATION END -->
+
+	<section id="home">
+		<div class="jumbotron">
+		  <img class="align-middle" id="my-face" src="images/ShyamFaceCrop.jpg">
+		  <h1 class="display-4">Hi, I'm <span class="important-word">Shyam</span>!</h1>
+		  <p class="lead">I'm a self-taught web developer and I love creating modern and elegant looking web-apps that are responsive and dynamic!</p>
+		  <hr class="my-4">
+		  <p>if you can read this, click below to read more!</p>
+		  <p class="lead">
+		  <a class="btn btn-primary btn-lg" href="#about" role="button">Learn more</a>
+		  </p>
+		</div>
+	</section> <!-- END OF HOME SECTION -->
+
+	<section id="about">
+		<div class="jumbotron white-section">
+			<h1 class="main-section-heading">About Me</h1>
+			<p class="lead">I have had an interest in web technologies for several years but it was only recently that I started to take it seriously!</p>	
+
+			<p class="lead">I come from a Finance background and the last company I was contracting with decided to move operations earlier in 2018 elsewhere, which led to my resignation. This was a blessing in disguise because I wanted to wind down and travel to a few countries before I decided what I wanted to do next. After summiting Mt Etna: Italy, enjoying the heat of the desert in Jordan, drinking many coconuts in the beaches of Goa: India, I decided to explore my career options</p>
+
+			<p class="lead">Anyway, after a few short weeks of really giving it some thought, I decided to pursue programming. Since learning the fundamentals of programming, I have built working knowledge of several technologies and have begun working on my portfolio to showcase to you. I really enjoy working on web technologies and taking an idea to end product.</p>
+
+			<p>Like what you see? can you even read this tiny font? Why not click below to view my portfolio...</p>
+
+			<a class="btn btn-primary btn-lg" href="#portfolio" role="button">Go To My Portfolio</a>
+		</div>
+	</section> <!-- ABOUT SECTION END -->
+
+	<section id="portfolio">
+		<div class="jumbotron">
+<!--
+			<div class="container">
+                <h1 class="display-4" id="portfolio-heading">Portfolio</h1>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card bg-dark text-white">
+                               <img class="card-img" src="images/cabin.png" alt="Card image">
+                               <div class="card-img-overlay">
+                                   <h4 class="card-title">Card title</h4>
+                                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                   <p class="card-text">Last updated 3 mins ago</p>
+                               </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card bg-dark text-white">
+                               <img class="card-img" src="images/cabin.png" alt="Card image">
+                               <div class="card-img-overlay">
+                                   <h4 class="card-title">Card title</h4>
+                                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                   <p class="card-text">Last updated 3 mins ago</p>
+                               </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card bg-dark text-white">
+                               <img class="card-img" src="images/cabin.png" alt="Card image">
+                               <div class="card-img-overlay">
+                                   <h4 class="card-title">Card title</h4>
+                                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                   <p class="card-text">Last updated 3 mins ago</p>
+                               </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card bg-dark text-white">
+                               <img class="card-img" src="images/cabin.png" alt="Card image">
+                               <div class="card-img-overlay">
+                                   <h4 class="card-title">Card title</h4>
+                                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                   <p class="card-text">Last updated 3 mins ago</p>
+                               </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+-->         
+            <!-- THE BELOW WILL BE REMOVED ONCE PORTFOLIO SECTION COMES IN -->
+            <h1 class="main-section-heading">Coming Soon</h1>
+            <br>
+            <br>
+            <p>Like what you see? Why not click below to get in touch and tell me about your business requirements?</p>
+            <p>We can provide a customised quotation based on your needs.</p>
+            <a class="btn btn-primary btn-lg hire-me" href="#hireme" role="button">Hire Me</a>
+		</div>
+	</section> <!-- PORTFOLIO SECTION END -->
+    
+    <section id="hireme">
+        <div class="container">
+            <div class="jumbotron white-section">
+                <h1 class="main-section-heading">Hire Me</h1>
+
+                <form action="" method="post" enctype="multipart/form-data">
+                   <div class="form-group">
+                       <label for="fullname">Name</label>
+                       <input type="text" class="form-control" id="fullname" placeholder="Enter Your full Name">
+                   </div>
+                   <div class="form-group">
+                       <label for="email">Email address</label>
+                       <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                   </div>
+                   <div class="form-group">
+                       <label for="exampleFormControlSelect1">Your requirements</label>
+                       <select class="form-control" id="yourrequirements">
+                          <option value="" selected disabled>Please select</option>
+                          <option>Create a Dynamic and Responsive Website / Web-app</option>
+                          <option>Work on an existing Website</option>
+                          <option>Fix issues / bugs</option>
+                          <option>Contracting Opportunitites</option>
+                          <option>Other</option>
+                       </select>
+                   </div>
+                   <div class="form-group">
+                       <label for="requirements">Additional Information</label>
+                       <textarea class="form-control" id="requirements" rows="3" placeholder="Please provide more information related to your request. A detailed specification would be ideal to assess your requirements."></textarea>
+                   </div>
+                   <button type="submit" class="btn btn-primary hire-me">Get a Quote</button>
+                </form>
+            </div>
+        </div>
+	</section> <!-- HIRE ME SECTION END -->
+	
+<!--
+    <section>
+        <div class="container">
+            <div class="jumbotron-fluid">
+                <footer class="text-muted">
+                    <button id="back-to-top" class="btn btn-default btn-md float-sm-right">
+                        <a href="#home">Back to top</a>
+                    </button>
+                    
+                    
+
+                    <p>random stuff</p>
+                </footer> 
+            </div>
+        </div>
+    </section>
+-->
+    
+
+    <div class="container">
+        <div class="jumbotron-fluid d-flex justify-content-start">
+            <ul>
+                <li>
+                    <a href="#"><img class="img-css" src="images/github.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img class="img-css" src="images/linkedin.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img class="img-css" src="images/email.png"></a>
+                </li>
+            </ul>
+            
+            <div class="ml-auto">
+                <p id="copyright">Copyright © 2018 SVDeveloper</p>
+            </div>
+            
+            <div class="ml-auto">
+                <a href="#home"><img class="back-to-top" src="images/back-to-top.png"></a>
+            </div>
+        </div>
+    </div>
+
+    
+    
+	
+	
+
+
+    <!-- SCRIPS, JQERY ETC -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!-- COPYRIGHT AND FOOTER SIDE SCRIPTS -->
+    
+    
+    
+    <!-- END OF SCRIPS -->
+
 </body>
 </html>

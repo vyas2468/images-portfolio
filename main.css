@@ -1,45 +1,196 @@
+/* UPDATE VERSION 2 */
+body {
+	font-family: 'Shadows Into Light', cursive;
+}
+
+/*navigation start*/
+
+.navbar-brand {
+	font-size: 2em;
+	font-weight: bold;
+	/*margin-left: 10px;*/
+	padding: 10px;
+	border-bottom: 2px solid pink;
+	/*border-right: 2px solid pink;
+	box-shadow: 4px 2px #888888;*/
+}
+
+
+.nav-link {
+	font-size: 2em;
+	/*padding-left: 20px;
+	padding-right: 20px;*/
+	margin-right: 30px;
+	text-align: center;
+    font-weight: bold;
+/*    background-color: rgba(0, 121, 191, 0.4);*/
+    border-radius: 4px;
+}
+
+.special-context {
+    background-color: rgba(0, 121, 191, 0.4);
+    border-radius: 4px;
+    
+}
+
+.nav-link:hover {
+	background-color: rgba(237, 227, 40, 0.4);
+	text-decoration: underline;
+	border-radius: 4px;
+
+} 
+
 /*
-flexbo properties. 
-We want to define that everything inside of the div is part of 
-flexbox. within container, display: flex; activates flexbox
+.special-context:hover {
+    background-color: rgba(237, 227, 40, 0.4);
+    border-radius: 4px;
+} 
 */
 
-body {
-	background-color: #3594E1;
+/*navigation end*/
+
+
+/*HOME SECTION START*/
+/*#home .jumbotron {
+	margin-top: 20px;
+}*/
+.jumbotron {
+	text-align: center;
+
+}
+
+#my-face {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	opacity: .6;
+
 }
 
 h1 {
+	margin-top: 20px;
+}
+
+.important-word {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.lead {
+	font-size: 28px;
+}
+
+.btn-primary {
+	background-color: orange;
+	color: black;
+	font-weight: bold;
+	font-size: 1.2em;
+	border: 2px solid black;
+	/*margin-top: 20px;*/
+/*	margin-bottom: -60px;*/
+	padding: 20px;
+} /* END OF HOME SECTION */
+
+
+/*ABOUT SECTION START*/
+.white-section {
+	background-color: #FFFFFF;
 	text-align: center;
-	font-family: 'Gloria Hallelujah', cursive;
-	font-size: 3em;
-	/*margin: auto;*/
-	width: 400px;
-	border-bottom: 4px solid pink;
-	border-right: 4px solid pink;
+	padding: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-h1:hover {
-	transform: scale(1.1);
+.main-section-heading {
+	font-weight: bold;
+	font-size: 3.5em;
+    text-decoration: underline;
 }
 
-.container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+#about .btn-primary {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 20px;
+	font-size: 1.5em;
+} /*ABOUT SECTION COMPLETE*/
 
+
+/*PORTFOLIO SECTION START*/
+
+#portfolio-heading {
+    text-align: center;
 }
 
-img {
-	width: 450px;
-	height: 300px;
-	/*padding: 20px;*/
-	margin: 30px;
-	border-radius: 40px;
-	/*border: 2px solid pink;*/
+.col-lg-4 {
+    margin: auto;
+    padding: 20px;
 }
 
-img:hover {
-	transform: scale(1.2);
-
+.hire-me {
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
 
+/* 
+THE ABOVE WILL WORK WHEN I 
+UNCOMMENT THE CODE IN INDEX.HTML
+FILE AND ADD PORTFOLIO. NEED TO 
+ADD ANIMATION OR HOVER EFFECT TOO
+AND LINK TO PORTFOLIO.
+*/
+
+
+/*PORTFOLIO SECTION END */
+
+
+/*HIRE ME SECTION START*/
+form {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+label {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.form-control {
+    font-size: 20px;
+}
+
+/*HIRE ME SECTION END*/
+
+
+/*FOOTER SECTION STARTS*/
+section .jumbotron-fluid {
+    background-color: #F8F9FA;
+    padding-bottom: 10px;
+}
+
+.jumbotron-fluid ul {
+    display: flex;
+    /*justify-content: flex-start;*/
+    list-style-type: none;
+    
+}
+
+jumbotron-fluid p {
+    color: #ccc;
+    margin-top: 9px;
+    margin-bottom: 0;
+    
+}
+
+#copyright {
+    font-weight: bold;
+}
+
+
+.img-css {
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.back-to-top {
+    width: 32px;
+    height: 32px;
+}
