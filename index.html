@@ -15,7 +15,7 @@
 </head>
 <body>
     <!-- fixed-top and bg-transparent could be added -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" id="top">
 	  <a class="navbar-brand" href="#">SVDeveloper</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
 	        <a class="nav-link" href="#hireme">Hire Me</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="special-context nav-link" href="#">Resume</a>
+	        <a class="special-context nav-link disabled" href="#">Resume</a>
 	      </li>
 	    </ul>
 	  </div>
@@ -50,7 +50,7 @@
 		  <hr class="my-4">
 		  <p>if you can read this, click below to read more!</p>
 		  <p class="lead">
-		  <a class="btn btn-primary btn-lg pulse-button" href="#about" role="button">Learn more</a>
+		  <a class="btn btn-primary btn-lg" href="#about" role="button">Learn more</a>
 		  </p>
 		</div>
 	</section> <!-- END OF HOME SECTION -->
@@ -66,7 +66,7 @@
 
 			<p>Like what you see? can you even read this tiny font? Why not click below to view my portfolio...</p>
 
-			<a class="btn btn-primary btn-lg pulse-button" href="#portfolio" role="button">Go To My Portfolio</a>
+			<a class="btn btn-primary btn-lg" href="#portfolio" role="button">Go To My Portfolio</a>
 		</div>
 	</section> <!-- ABOUT SECTION END -->
 
@@ -127,7 +127,7 @@
             <br>
             <p>Like what you see? Why not click below to get in touch and tell me about your business requirements?</p>
             <p>We can provide a customised quotation based on your needs.</p>
-            <a class="btn btn-primary btn-lg hire-me pulse-button" href="#hireme" role="button">Hire Me</a>
+            <a class="btn btn-primary btn-lg hire-me" href="#hireme" role="button">Hire Me</a>
 		</div>
 	</section> <!-- PORTFOLIO SECTION END -->
     
@@ -136,7 +136,7 @@
             <div class="jumbotron white-section">
                 <h1 class="main-section-heading">Hire Me</h1>
 
-                <form action="https://formspree.io/vyas2468@outlook.com" method="POST" /> enctype="multipart/form-data">
+                <form action="https://formspree.io/vyas2468@outlook.com" method="POST" enctype="multipart/form-data"/> 
                    <div class="form-group">
                        <label for="fullname">Name</label>
                        <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Enter Your full Name">
@@ -204,7 +204,7 @@
             </div>
             
             <div class="ml-auto">
-                <a href="#home"><img class="back-to-top" src="images/back-to-top.png"></a>
+                <a href="#top"><img class="back-to-top" src="images/back-to-top.png"></a>
             </div>
         </div>
     </div>
@@ -214,12 +214,13 @@
 	
 	
 
-
+    
     <!-- SCRIPS, JQERY ETC -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
+<!--    <script src="script.js"></script>-->
     <!-- COPYRIGHT AND FOOTER SIDE SCRIPTS -->
     
     
