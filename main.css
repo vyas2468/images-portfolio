@@ -63,13 +63,25 @@ body {
 
 }
 
+/* MY FACE ANIMATED HEART BEAT*/
 #my-face {
 	width: 300px;
 	height: 300px;
 	border-radius: 50%;
 	opacity: .6;
+    
 
 }
+
+.heart-beat {
+    animation: beat 2s infinite alternate;
+	transform-origin: center;
+}
+@keyframes beat {
+	to { transform: scale(1.2); }
+}
+
+/*END OF ANIMATION*/
 
 h1 {
 	margin-top: 20px;
