@@ -136,18 +136,18 @@
             <div class="jumbotron white-section">
                 <h1 class="main-section-heading">Hire Me</h1>
 
-                <form action="" method="post" enctype="multipart/form-data">
+                <form action="https://formspree.io/vyas2468@outlook.com" method="POST" /> enctype="multipart/form-data">
                    <div class="form-group">
                        <label for="fullname">Name</label>
-                       <input type="text" class="form-control" id="fullname" placeholder="Enter Your full Name">
+                       <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Enter Your full Name">
                    </div>
                    <div class="form-group">
                        <label for="email">Email address</label>
-                       <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                       <input type="_replyto" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter email">
                    </div>
                    <div class="form-group">
                        <label for="exampleFormControlSelect1">Your requirements</label>
-                       <select class="form-control" id="yourrequirements">
+                       <select class="form-control" name="selectedoption" id="yourrequirements">
                           <option value="" selected disabled>Please select</option>
                           <option>Create a Dynamic and Responsive Website / Web-app</option>
                           <option>Work on an existing Website</option>
@@ -158,7 +158,7 @@
                    </div>
                    <div class="form-group">
                        <label for="requirements">Additional Information</label>
-                       <textarea class="form-control" id="requirements" rows="3" placeholder="Please provide more information related to your request. A detailed specification would be ideal to assess your requirements."></textarea>
+                       <textarea class="form-control" name="message" id="requirements" rows="3" placeholder="Please provide more information related to your request. A detailed specification would be ideal to assess your requirements."></textarea>
                    </div>
                    <button type="submit" class="btn btn-primary hire-me pulse-button">Get a Quote</button>
                 </form>
