@@ -1,12 +1,17 @@
 /* UPDATE VERSION 2 */
 html {
     scroll-behavior: smooth;
+    
 }
 
 body {
-	font-family: 'Shadows Into Light', cursive;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
+navbar, .nav-link, #important-word, .navbar-brand, h1, .btn-primary, .form-control {
+    font-family: 'Shadows Into Light', cursive;
+}
 /*navigation start*/
 
 .navbar-brand {
@@ -92,8 +97,16 @@ h1 {
 	font-size: 1.5em;
 }
 
+#home-tag-line {
+    margin-top: 40px;
+}
+
+p {
+    font-size: 10px;
+}
 .lead {
-	font-size: 28px;
+	font-size: 18px;
+    
 }
 
 .btn-primary {
@@ -121,6 +134,7 @@ h1 {
 	font-weight: bold;
 	font-size: 3.5em;
     text-decoration: underline;
+    margin-bottom: 20px;
 }
 
 #about .btn-primary {
@@ -166,11 +180,13 @@ form {
     
 }
 label {
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 1.2em;
+/*    font-weight: bold;*/
 }
 .form-control {
     font-size: 20px;
+/*    font-weight: bold;*/
+    
 }
 
 /*HIRE ME SECTION END*/
